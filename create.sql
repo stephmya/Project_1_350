@@ -1,3 +1,4 @@
+CREATE TABLE charity (
     charity_id INT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     country VARCHAR(50) NOT NULL,
@@ -28,7 +29,7 @@ CREATE TABLE donation (
     currency VARCHAR(3) NOT NULL,
     donation_date DATE NOT NULL,
     is_recurring BOOLEAN NOT NULL,
-    FOREIGN KEY (donor_id) REFERENCES donor(donor_id)
+    -- FOREIGN KEY (donor_id) REFERENCES donor(donor_id) -- Not really sure if this is needed.
 );
 
 CREATE TABLE case (
