@@ -32,12 +32,14 @@ CREATE TABLE donor (
 CREATE TABLE donation (
     donation_id INT PRIMARY KEY,
     donor_id INT,
+    charity_id INT, 
     amount DECIMAL(10, 2) NOT NULL,
     payment_method VARCHAR(20) NOT NULL,
     currency CHAR(3) NOT NULL,
     donation_date DATE NOT NULL,
     is_recurring BOOLEAN NOT NULL,
-    FOREIGN KEY (donor_id) REFERENCES donor(donor_id)
+    FOREIGN KEY (donor_id) REFERENCES donor(donor_id),
+    FOREIGN KEY (charity_id) REFERENCES charity(charity_id)
 );
 
 CREATE TABLE fraud_case (
