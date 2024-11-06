@@ -82,7 +82,6 @@ INSERT INTO rating (rating_id, charity_id, rating_source, rating_score, rating_d
 (29, 17, 'GuideStar', 4, '2023-09-16'),
 (30, 18, 'BBB Wise Giving Alliance', 4, '2023-10-27');
 
-
 INSERT INTO donation (donation_id, donor_id, amount, payment_method, currency, donation_date, is_recurring) VALUES
 (1, 1, 100, 'Credit Card', 'USD', '2023-06-15', TRUE),
 (2, 2, 50, 'PayPal', 'CAD', '2022-12-05', FALSE),
@@ -136,9 +135,3 @@ INSERT INTO donor (donor_id, name, email, phone, address) VALUES
 (8, 'Patricia Anderson', NULL, NULL, '789 Cypress Avenue, Orlando, FL'),
 (9, 'Thomas Martinez', 'thomas.m@example.com', '555-3456', '123 Ash Street, Portland, ME'),
 (10, 'Linda Thompson', 'linda.t@example.com', '555-4567', '456 Willow Boulevard, Phoenix, AZ');
-(7, 7, '2', 'LA Times', NULL, NULL, NULL, '2002-02-06'),
-(8, 8, '2', 'CNN', NULL, NULL, NULL, '2013-09-06'),
-(9, 9, '2', 'FTC', NULL, NULL, NULL, '2016-09-29'),
-(10, 10, '1', 'Department of Justice', NULL, NULL, NULL, '2024-10-15'),
-(11, 11, '2', 'Fox News', NULL, NULL, NULL, '2024-04-21'),
-(12, 12, '4', 'FTC', NULL, NULL, NULL, '2021-03-04'); 
