@@ -70,6 +70,7 @@ INSERT INTO rating (rating_id, charity_id, rating_source, rating_score, rating_d
 (23, 11, 'Charity Navigator', 3, '2023-01-17'),
 (24, 12, 'Charity Navigator', 2, '2023-01-11');
 
+
 INSERT INTO donation (donation_id, donor_id, amount, payment_method, currency, donation_date, is_recurring) VALUES
 (1, 1, 100, 'Credit Card', 'USD', '2023-06-15', TRUE),
 (2, 2, 50, 'PayPal', 'CAD', '2022-12-05', FALSE),
