@@ -1,16 +1,16 @@
 INSERT INTO charity (charity_id, name, country, website, year_founded, mission) VALUES
-(1, 'International Committee of the Red Cross', 'Switzerland', 'International Committee of The Red Cross', 1863, 'To protect victims of armed conflict and violence.'),
-(2, 'United Nations High Commissioner for Refugees', 'Switzerland', 'United Nations High Commissioner for Refugees', 1950, 'To safeguard the rights and well-being of refugees.'),
-(3, 'World Food Programme', 'Italy', 'World Food Programme', 1961, 'To end hunger and promote food security.'),
-(4, 'Save the Children', 'USA', 'Save The Children', 1919, 'To ensure every child has the opportunity to survive and learn.'),
-(5, 'Doctors Without Borders', 'France', 'Doctors Without Borders', 1971, 'To provide lifesaving medical care to those in need.'),
-(6, 'Direct Relief', 'USA', 'Direct Relief', 1948, 'To improve health and lives through medical assistance.'),
-(7, 'Hale House Foundation', 'USA', 'Hale House', 1972, 'To provide support for children and families in need.'),
-(8, 'Help Heal Veterans', 'USA', 'Help Heal Veterans', 1971, 'To provide therapeutic arts and crafts to hospitalized veterans.'),
-(9, 'Cancer Fund of America', 'USA', 'Cancer Fund of America', 1987, 'To support cancer patients and raise awareness for cancer treatment.'),
-(10, 'United Way of America', 'USA', 'United Way', 1887, 'To improve lives by mobilizing the caring power of communities.'),
-(11, 'Latino Coalition Foundation', 'USA', 'Latino Coalition for Community Leadership', 1999, 'To advocate for and empower Latino communities.'),
-(12, 'Associated Community Services', 'USA', 'Associated Community Services', 1990, 'To provide assistance and resources for community improvement.');
+(1, 'International Committee of the Red Cross', 'Switzerland', 'https://www.icrc.org', 1863, 'To protect victims of armed conflict and violence.'),
+(2, 'United Nations High Commissioner for Refugees', 'Switzerland', 'https://www.unhcr.org', 1950, 'To safeguard the rights and well-being of refugees.'),
+(3, 'World Food Programme', 'Italy', 'https://www.wfp.org', 1961, 'To end hunger and promote food security.'),
+(4, 'Save the Children', 'USA', 'https://www.savethechildren.org', 1919, 'To ensure every child has the opportunity to survive and learn.'),
+(5, 'Doctors Without Borders', 'France', 'https://www.msf.org', 1971, 'To provide lifesaving medical care to those in need.'),
+(6, 'Direct Relief', 'USA', 'https://www.directrelief.org', 1948, 'To improve health and lives through medical assistance.'),
+(7, 'Hale House Foundation', 'USA', 'https://www.halehouse.org', 1972, 'To provide support for children and families in need.'),
+(8, 'Help Heal Veterans', 'USA', 'https://www.helphealvets.org', 1971, 'To provide therapeutic arts and crafts to hospitalized veterans.'),
+(9, 'Cancer Fund of America', 'USA', 'https://www.cancerfund.org', 1987, 'To support cancer patients and raise awareness for cancer treatment.'),
+(10, 'United Way of America', 'USA', 'https://www.unitedway.org', 1887, 'To improve lives by mobilizing the caring power of communities.'),
+(11, 'Latino Coalition Foundation', 'USA', 'https://www.thelatinocoalition.org', 1999, 'To advocate for and empower Latino communities.'),
+(12, 'Associated Community Services', 'USA', 'https://www.associatedcommunityservices.org', 1990, 'To provide assistance and resources for community improvement.');
 
 INSERT INTO fraud (fraud_id, fraud_type) VALUES
 (1, 'Embezzlement'),
@@ -92,16 +92,10 @@ INSERT INTO donation (donation_id, donor_id, amount, payment_method, currency, d
 (19, 19, 60, 'Bank Transfer', 'EUR', '2023-06-18', FALSE),
 (20, 20, 100, 'PayPal', 'JPY', '2022-11-29', TRUE);
 
-INSERT INTO fraud_case (case_id, charity_id, fraud_id, investigation_source, cont1, cont2, cont3, case_date) VALUES
-(1, 1, NULL, 'npr', NULL, NULL, NULL, '2016-06-16'),
-(2, 2, '1', 'The New Humanitarian', NULL, NULL, NULL, '2022-12-07'),
-(3, 3, '2,30', 'swissinfo', 'Reuters', 'Polity', NULL, '2024-08-20'),
-(4, 4, '29', 'BBC', NULL, NULL, NULL, '2024-10-08'),
-(5, 5, '16', 'Doctors Without Borders', 'MSF', NULL, NULL, '2017-04-01'),
-(6, 6, '16', 'Direct Relief', NULL, NULL, NULL, '2015-05-15'),
-(7, 7, '2', 'LA Times', NULL, NULL, NULL, '2002-02-06'),
-(8, 8, '2', 'CNN', NULL, NULL, NULL, '2013-09-06'),
-(9, 9, '2', 'FTC', NULL, NULL, NULL, '2016-09-29'),
-(10, 10, '1', 'Department of Justice', NULL, NULL, NULL, '2024-10-15'),
-(11, 11, '2', 'Fox News', NULL, NULL, NULL, '2024-04-21'),
-(12, 12, '4', 'FTC', NULL, NULL, NULL, '2021-03-04');
+INSERT INTO fraud_case (case_id, charity_id, investigation_source, cont1, cont2, cont3, case_date) VALUES
+(1, 1, 'npr', NULL, NULL, NULL, '2016-06-16'),
+(2, 2, 'The New Humanitarian', 'Misuse of Funds', NULL, NULL, '2022-12-07'),
+(3, 3, 'swissinfo', 'Misuse of Funds', 'Phantom Beneficiaries', NULL, '2024-08-20'),
+(4, 4, 'BBC', 'Charity Sabotage', NULL, NULL, '2024-10-08'),
+(5, 5, 'Doctors Without Borders', 'Phantom Beneficiaries', NULL, NULL, '2017-04-01'),
+(6, 6, 'Direct Relief', NULL, NULL, NULL, '2023-01-20');
