@@ -104,4 +104,4 @@ INSERT INTO fraud_case (case_id, charity_id, investigation_source, cont1, cont2,
 (9, 9, '2', 'FTC', NULL, NULL, NULL, '2016-09-29'),
 (10, 10, '1', 'Department of Justice', NULL, NULL, NULL, '2024-10-15'),
 (11, 11, '2', 'Fox News', NULL, NULL, NULL, '2024-04-21'),
-(12, 12, '4', 'FTC', NULL, NULL, NULL, '2021-03-04');
+(12, 12, '4', 'FTC', NULL, NULL, NULL, '2021-03-04'); 
