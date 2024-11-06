@@ -5,12 +5,43 @@ skipFiles = [ ".gitignore", "package.json" ]
 [[processes]]
 id = "process2"
 name = "In Progress"
-tasks = [ ]
+
+  [[processes.tasks]]
+  id = "iujze7ngpecckt5cjbua5ml5"
+  title = "ReadMe file"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "k3lahk43nukcn2kl692qbcne"
+  title = "Create a backup dumpfile"
+  description = "- Need to meet up tomorrow 11/7 to finalize project"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
 
 [[processes]]
 id = "p0gvympbymm5xayow8v1ocob"
 name = "Testing"
-tasks = [ ]
+
+  [[processes.tasks]]
+  id = "qn8wd9ihn1w7twzrlbz500fw"
+  title = "Schemas"
+  description = ""
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
 
 [[processes]]
 id = "process3"
