@@ -12,8 +12,6 @@
 
 ### Building/Running the Database
 ### Project Timeline
-
-## Completed Tasks:
 - **October 7, 2024**: Repository set up for Project 1 CS350.  
 
 - **October 10, 2024**: Held virtual meeting to initialize Kanpilot Kanban tool and talk game plan.
