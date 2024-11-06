@@ -5,7 +5,17 @@ skipFiles = [ ".gitignore", "package.json" ]
 [[processes]]
 id = "process1"
 name = "Backlog"
-tasks = [ ]
+
+  [[processes.tasks]]
+  id = "np7izik2wsz4lidt33rusa8h"
+  title = "Meetings"
+  description = "<ul><li><p>October 7, 2024 - Created a repo for Project 1 CS350</p></li><li><p>October 10, 2024 - Virtual Meeting, Initialized Kan Pilot</p></li><li><p>October 14, 2024 - Created tables and researched charities.</p></li><li><p>October 16, 2024 - Defined schema objects such as functions and procedures for managing donations and fraud investigations.</p></li><li><p>October 21, 2024 - Developed stored procedures for inserting and updating charity ratings, and tested their functionality.</p></li><li><p>October 23, 2024 - Created functions to calculate total donations and retrieve the latest charity rating, followed by unit tests.</p></li><li><p>October 28, 2024 - Implemented triggers for logging fraud case insertions and updating charity average ratings automatically.</p></li><li><p>November 4, 2024 - Completed the insertion scripts for initial data across all tables, including charities, donations, and fraud cases.</p></li><li><p>November 6, 2024 - Reviewed the entire database schema for optimization, documentation of processes, and prepared for potential user feedback sessions.</p></li></ul>"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
 
 [[processes]]
 id = "process2"
