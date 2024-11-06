@@ -99,3 +99,9 @@ INSERT INTO fraud_case (case_id, charity_id, investigation_source, cont1, cont2,
 (4, 4, 'BBC', 'Charity Sabotage', NULL, NULL, '2024-10-08'),
 (5, 5, 'Doctors Without Borders', 'Phantom Beneficiaries', NULL, NULL, '2017-04-01'),
 (6, 6, 'Direct Relief', NULL, NULL, NULL, '2023-01-20');
+(7, 7, '2', 'LA Times', NULL, NULL, NULL, '2002-02-06'),
+(8, 8, '2', 'CNN', NULL, NULL, NULL, '2013-09-06'),
+(9, 9, '2', 'FTC', NULL, NULL, NULL, '2016-09-29'),
+(10, 10, '1', 'Department of Justice', NULL, NULL, NULL, '2024-10-15'),
+(11, 11, '2', 'Fox News', NULL, NULL, NULL, '2024-04-21'),
+(12, 12, '4', 'FTC', NULL, NULL, NULL, '2021-03-04');
