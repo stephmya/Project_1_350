@@ -92,7 +92,7 @@ INSERT INTO donation (donation_id, donor_id, amount, payment_method, currency, d
 (19, 19, 60, 'Bank Transfer', 'EUR', '2023-06-18', FALSE),
 (20, 20, 100, 'PayPal', 'JPY', '2022-11-29', TRUE);
 
-INSERT INTO case (case_id, charity_id, fraud_id, investigation_source, cont1, cont2, cont3, case_date) VALUES
+INSERT INTO fraud_case (case_id, charity_id, fraud_id, investigation_source, cont1, cont2, cont3, case_date) VALUES
 (1, 1, NULL, 'npr', NULL, NULL, NULL, '2016-06-16'),
 (2, 2, '1', 'The New Humanitarian', NULL, NULL, NULL, '2022-12-07'),
 (3, 3, '2,30', 'swissinfo', 'Reuters', 'Polity', NULL, '2024-08-20'),

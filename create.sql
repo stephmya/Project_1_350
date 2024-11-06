@@ -28,11 +28,11 @@ CREATE TABLE donation (
     payment_method VARCHAR(20) NOT NULL,
     currency VARCHAR(3) NOT NULL,
     donation_date DATE NOT NULL,
-    is_recurring BOOLEAN NOT NULL,
+    is_recurring BOOLEAN NOT NULL
     -- FOREIGN KEY (donor_id) REFERENCES donor(donor_id) -- Not really sure if this is needed.
 );
 
-CREATE TABLE case (
+CREATE TABLE fraud_case (
     case_id INT PRIMARY KEY,
     charity_id INT,
     fraud_id VARCHAR(50),  -- Handles multiple fraud IDs (e.g., "2,30")
