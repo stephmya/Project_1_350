@@ -125,6 +125,16 @@ INSERT INTO fraud_case (case_id, charity_id, investigation_source, cont1, cont2,
 (12, 18, 'New York Times', 'Money Laundering', 'Tax Evasion', NULL, '2022-05-10');
 
 INSERT INTO donor (donor_id, name, email, phone, address) VALUES
+(1, 'John Doe', 'johndoe@example.com', '555-1234', '123 Elm Street, Springfield, IL'),
+(2, 'Jane Smith', 'janesmith@example.com', '555-5678', '456 Oak Avenue, Lincoln, NE'),
+(3, 'Michael Johnson', 'michael.j@example.com', '555-8765', '789 Pine Road, Madison, WI'),
+(4, 'Emily Davis', 'emily.davis@example.com', '555-4321', '321 Maple Drive, Salem, OR'),
+(5, 'Robert Brown', NULL, '555-2345', '654 Cedar Lane, Boulder, CO'),
+(6, 'Susan Wilson', 'susan.w@example.com', NULL, '987 Birch Street, Austin, TX'),
+(7, 'James Taylor', 'james.taylor@example.com', '555-6789', '321 Spruce Street, Raleigh, NC'),
+(8, 'Patricia Anderson', NULL, NULL, '789 Cypress Avenue, Orlando, FL'),
+(9, 'Thomas Martinez', 'thomas.m@example.com', '555-3456', '123 Ash Street, Portland, ME'),
+(10, 'Linda Thompson', 'linda.t@example.com', '555-4567', '456 Willow Boulevard, Phoenix, AZ'),
 (11, 'Barbara Clark', 'barbara.clark@example.com', '555-1111', '159 Sycamore Street, Nashville, TN'),
 (12, 'Christopher Lewis', 'chris.lewis@example.com', '555-2222', '753 Redwood Road, Seattle, WA'),
 (13, 'Nancy Walker', 'nancy.walker@example.com', '555-3333', '852 Poplar Lane, Austin, TX'),
