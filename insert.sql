@@ -11,6 +11,12 @@ INSERT INTO charity (charity_id, name, country, website, year_founded, mission) 
 (10, 'United Way of America', 'USA', 'https://www.unitedway.org', 1887, 'To improve lives by mobilizing the caring power of communities.'),
 (11, 'Latino Coalition Foundation', 'USA', 'https://www.thelatinocoalition.org', 1999, 'To advocate for and empower Latino communities.'),
 (12, 'Associated Community Services', 'USA', 'https://www.associatedcommunityservices.org', 1990, 'To provide assistance and resources for community improvement.');
+(13, 'Charity Water', 'USA', 'https://www.charitywater.org', 2006, 'To bring clean and safe drinking water to people in developing countries.'),
+(14, 'Oxfam', 'UK', 'https://www.oxfam.org', 1942, 'To end the injustices that cause poverty.'),
+(15, 'Habitat for Humanity', 'USA', 'https://www.habitat.org', 1976, 'To build strength, stability, and self-reliance through shelter.'),
+(16, 'World Wildlife Fund', 'Switzerland', 'https://www.worldwildlife.org', 1961, 'To conserve nature and reduce the most pressing threats to biodiversity.'),
+(17, 'Greenpeace', 'Netherlands', 'https://www.greenpeace.org', 1971, 'To ensure the ability of the Earth to nurture life in all its diversity.'),
+(18, 'The Nature Conservancy', 'USA', 'https://www.nature.org', 1951, 'To conserve the lands and waters on which all life depends.');
 
 INSERT INTO fraud (fraud_id, fraud_type) VALUES
 (1, 'Embezzlement'),
@@ -69,6 +75,12 @@ INSERT INTO rating (rating_id, charity_id, rating_source, rating_score, rating_d
 (22, 10, 'Charity Navigator', 3, '2023-01-14'),
 (23, 11, 'Charity Navigator', 3, '2023-01-17'),
 (24, 12, 'Charity Navigator', 2, '2023-01-11');
+(25, 13, 'Charity Navigator', 4, '2023-05-12'),
+(26, 14, 'GuideStar', 3, '2023-06-23'),
+(27, 15, 'BBB Wise Giving Alliance', 4, '2023-07-14'),
+(28, 16, 'Charity Navigator', 3, '2023-08-05'),
+(29, 17, 'GuideStar', 4, '2023-09-16'),
+(30, 18, 'BBB Wise Giving Alliance', 4, '2023-10-27');
 
 INSERT INTO donation (donation_id, donor_id, amount, payment_method, currency, donation_date, is_recurring) VALUES
 (1, 1, 100, 'Credit Card', 'USD', '2023-06-15', TRUE),
@@ -91,6 +103,12 @@ INSERT INTO donation (donation_id, donor_id, amount, payment_method, currency, d
 (18, 18, 140, 'Credit Card', 'USD', '2023-05-02', TRUE),
 (19, 19, 60, 'Bank Transfer', 'EUR', '2023-06-18', FALSE),
 (20, 20, 100, 'PayPal', 'JPY', '2022-11-29', TRUE);
+(21, 11, 150, 'Credit Card', 'USD', '2023-05-25', FALSE),
+(22, 12, 200, 'PayPal', 'GBP', '2023-06-30', TRUE),
+(23, 13, 75, 'Bank Transfer', 'EUR', '2023-07-22', FALSE),
+(24, 14, 100, 'Credit Card', 'USD', '2023-08-19', TRUE),
+(25, 15, 180, 'Credit Card', 'CAD', '2023-09-10', TRUE),
+(26, 16, 90, 'PayPal', 'AUD', '2023-10-05', FALSE);
 
 INSERT INTO fraud_case (case_id, charity_id, investigation_source, cont1, cont2, cont3, case_date) VALUES
 (1, 1, 'npr', NULL, NULL, NULL, '2016-06-16'),
@@ -99,3 +117,21 @@ INSERT INTO fraud_case (case_id, charity_id, investigation_source, cont1, cont2,
 (4, 4, 'BBC', 'Charity Sabotage', NULL, NULL, '2024-10-08'),
 (5, 5, 'Doctors Without Borders', 'Phantom Beneficiaries', NULL, NULL, '2017-04-01'),
 (6, 6, 'Direct Relief', NULL, NULL, NULL, '2023-01-20');
+(7, 13, 'Reuters', 'False Advertising', NULL, NULL, '2023-04-25'),
+(8, 14, 'CNN', 'Grant Misuse', 'Unauthorized Fundraising', NULL, '2022-11-15'),
+(9, 15, 'Al Jazeera', 'Donation Skimming', 'Fake Charities', NULL, '2024-02-18'),
+(10, 16, 'BBC News', 'Non-Disclosure of Financial Information', NULL, NULL, '2021-09-30'),
+(11, 17, 'The Guardian', 'Expense Inflation', 'Unauthorized Personal Expenses', NULL, '2023-03-07'),
+(12, 18, 'New York Times', 'Money Laundering', 'Tax Evasion', NULL, '2022-05-10');
+
+INSERT INTO donor (donor_id, name, email, phone, address) VALUES
+(1, 'John Doe', 'johndoe@example.com', '555-1234', '123 Elm Street, Springfield, IL'),
+(2, 'Jane Smith', 'janesmith@example.com', '555-5678', '456 Oak Avenue, Lincoln, NE'),
+(3, 'Michael Johnson', 'michael.j@example.com', '555-8765', '789 Pine Road, Madison, WI'),
+(4, 'Emily Davis', 'emily.davis@example.com', '555-4321', '321 Maple Drive, Salem, OR'),
+(5, 'Robert Brown', NULL, '555-2345', '654 Cedar Lane, Boulder, CO'),
+(6, 'Susan Wilson', 'susan.w@example.com', NULL, '987 Birch Street, Austin, TX'),
+(7, 'James Taylor', 'james.taylor@example.com', '555-6789', '321 Spruce Street, Raleigh, NC'),
+(8, 'Patricia Anderson', NULL, NULL, '789 Cypress Avenue, Orlando, FL'),
+(9, 'Thomas Martinez', 'thomas.m@example.com', '555-3456', '123 Ash Street, Portland, ME'),
+(10, 'Linda Thompson', 'linda.t@example.com', '555-4567', '456 Willow Boulevard, Phoenix, AZ');
