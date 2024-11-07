@@ -12,10 +12,6 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-        -- Test the average charity rating for charity with ID 1 (change 1 to any valid charity ID)
-        SELECT get_avg_charity_rating(1);
-
-
 -- Get Total Donations by Donor A function to get the total amount donated by a donor.
 CREATE FUNCTION get_total_donations(p_donor_id INT)
 RETURNS DECIMAL(10,2)
@@ -29,9 +25,6 @@ BEGIN
     RETURN total_amount;
 END;
 $$ LANGUAGE plpgsql;
-
-        -- Test the total donations made by donor with ID 1 (change 1 to any valid donor ID)
-        SELECT get_total_donations(1);
 
 -- Add a New Charity A procedure to insert a new charity into the database.
 CREATE PROCEDURE add_charity(
@@ -49,19 +42,6 @@ BEGIN
     VALUES (charity_name, charity_country, charity_website, charity_year_founded, charity_mission);
 END;
 $$;
-        -- Reset the sequence for charity_id to the maximum current value + 1
-        SELECT setval('charity_charity_id_seq', (SELECT MAX(charity_id) FROM charity) + 1);
-
-        -- Test the add_charity procedure with sample values
-        CALL add_charity(
-            'Hope for All',                -- charity_name
-            'USA',                         -- charity_country
-            'http://www.hopeforall.org',    -- charity_website
-            2010,                          -- charity_year_founded
-            'Mission to support global health and education.'  -- charity_mission
-        );
-
-
 
 CREATE FUNCTION update_charity_rating_after_insert()
 RETURNS TRIGGER AS
@@ -77,10 +57,3 @@ CREATE TRIGGER after_rating_insert
 AFTER INSERT ON rating
 FOR EACH ROW
 EXECUTE FUNCTION update_charity_rating_after_insert();
-
-        -- Insert a new rating for a charity
-        INSERT INTO rating (charity_id, rating_source, rating_score, rating_date)
-        VALUES (1, 'TestSource', 8, '2024-11-07');
-
-
-        SELECT setval('rating_rating_id_seq', (SELECT MAX(rating_id) FROM rating));
