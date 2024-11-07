@@ -2,6 +2,13 @@
 
 ### Charitable Organizations Database Design
 
+## Contributors
+
+- **Au Sein**
+- **Honey Love**
+- **Stephanie Myalik**
+
+---
 ## Project Overview
 
 The objective of this project is to design a comprehensive PostgreSQL database to track charitable organizations globally, with a emphasis on identifying potential fraudulent activities. The database will store detailed information about organizations and their donations, and will include schema objects such as functions and procedures. This database will also include some data on the fraudulent activities that may be associated with these organizations.
