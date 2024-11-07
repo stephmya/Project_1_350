@@ -1,6 +1,6 @@
 CREATE TABLE charity (
-    charity_id INT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
+    charity_id SERIAL PRIMARY KEY,  
+    charity_name VARCHAR(100) NOT NULL,
     country VARCHAR(50) NOT NULL,
     website VARCHAR(150),
     year_founded INT,
@@ -13,7 +13,7 @@ CREATE TABLE fraud (
 );
 
 CREATE TABLE rating (
-    rating_id INT PRIMARY KEY,
+    rating_id SERIAL PRIMARY KEY, 
     charity_id INT,
     rating_source VARCHAR(50) NOT NULL,
     rating_score INT NOT NULL,
@@ -43,10 +43,10 @@ CREATE TABLE donation (
 );
 
 CREATE TABLE fraud_case (
-    case_id INT PRIMARY KEY,
+    case_id SERIAL PRIMARY KEY, 
     charity_id INT,
     investigation_source VARCHAR(50),
-    cont1 VARCHAR(50),  
+    cont1 VARCHAR(50),
     cont2 VARCHAR(50),
     cont3 VARCHAR(50),
     case_date DATE,
