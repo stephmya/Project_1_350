@@ -94,7 +94,6 @@ CALL add_charity(
     2010,                          -- charity_year_founded
     'Mission to support global health and education.'  -- charity_mission
 );
-
 ```
 
 4. Update Charity Rating After Insert
