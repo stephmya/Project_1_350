@@ -1,25 +1,40 @@
-name = "project"
+name = "Project Timeline"
 skipFolders = [ "node_modules", ".vscode", "out", "dist", ".vscode-test" ]
 skipFiles = [ ".gitignore", "package.json" ]
 
 [[processes]]
-id = "process1"
-name = "To Do"
+id = "process2"
+name = "In Progress"
 
   [[processes.tasks]]
-  id = "aofqgcyrf63ha59uzj0waw8v"
-  title = "Plan project scope and distribute tasks"
-  description = "Come up with ideas for the scope of the project and meet to start distributing tasks."
+  id = "iujze7ngpecckt5cjbua5ml5"
+  title = "ReadMe file"
+  description = ""
   tag = "backlog"
   linkFiles = [ ]
-  dueDate = "10/14/2024"
+  dueDate = ""
   checkList = [ ]
-  priority = "high"
+  priority = ""
   linkCommits = [ ]
 
   [[processes.tasks]]
-  id = "gsayurmhy262jwodhvm5t5lb"
-  title = "testing"
+  id = "k3lahk43nukcn2kl692qbcne"
+  title = "Create a backup dumpfile"
+  description = "- Need to meet up tomorrow 11/7 to finalize project"
+  tag = "backlog"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+[[processes]]
+id = "p0gvympbymm5xayow8v1ocob"
+name = "Testing"
+
+  [[processes.tasks]]
+  id = "qn8wd9ihn1w7twzrlbz500fw"
+  title = "Schemas"
   description = ""
   tag = "backlog"
   linkFiles = [ ]
@@ -29,31 +44,104 @@ name = "To Do"
   linkCommits = [ ]
 
 [[processes]]
-id = "process2"
-name = "In Progress"
+id = "process3"
+name = "Completed"
 
   [[processes.tasks]]
-  id = "pdlavo6ntsm0l540kv4ijm32"
-  title = "Come up with individual ideas for scope and process for project"
-  description = "Everyone in the group should modify the shared google document to make sure we are all on the same page about how we want to proceed with the project"
-  tag = "backlog"
+  id = "lu2fkbrjv5cfiq34czjzoil9"
+  title = "October 7, 2024: Repository set up for Project 1 CS350."
+  description = "<p></p>"
+  tag = "Setup"
   linkFiles = [ ]
-  dueDate = "10/14/2024"
+  dueDate = ""
   checkList = [ ]
   priority = ""
   linkCommits = [ ]
 
-[[processes]]
-id = "process3"
-name = "Done"
+  [[processes.tasks]]
+  id = "g2lrow4n6y9blz8st7w73rn2"
+  title = "October 10, 2024: Held virtual meeting to initialize Kanpilot Kanban tool."
+  description = ""
+  tag = "Meeting"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
 
   [[processes.tasks]]
-  id = "p7hp90cyio5hfd5ty8rfa3ls"
-  title = "Set up KanPilot"
+  id = "argdyskdn2bxsmodeczndf80"
+  title = "October 14, 2024: Tables created, and charities researched."
   description = ""
-  tag = "backlog"
+  tag = "Development"
   linkFiles = [ ]
-  dueDate = "10/10/2024"
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "pdf2dso5o0vm23acryehifay"
+  title = "October 16, 2024: Define schema objects (functions, procedures) for managing donations and fraud investigations."
+  description = ""
+  tag = "Development"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "n7by7j6c23ukqxs4031es9fp"
+  title = "October 21, 2024: Develop stored procedures for charity ratings insertion and update; test functionality."
+  description = ""
+  tag = "Development"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "bm1zsi6mifk8meqwu45eek04"
+  title = "October 23, 2024: Create and test functions for total donations calculation and latest charity rating retrieval."
+  description = ""
+  tag = "Schema Design"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "ynhajpwf0ayak11pebwqckwi"
+  title = "October 28, 2024: Implement and test triggers for logging fraud cases and updating charity ratings."
+  description = ""
+  tag = "Schema Design"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "xgz0op72fj0xk304kcc8e8mx"
+  title = "November 4, 2024: Insertion scripts completed for initial data in all tables."
+  description = ""
+  tag = "Data Management"
+  linkFiles = [ ]
+  dueDate = ""
+  checkList = [ ]
+  priority = ""
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "ldb1n47us74nrf0d3pk9mvsg"
+  title = "November 6, 2024: Schema optimization review and documentation finalized."
+  description = ""
+  tag = "Review"
+  linkFiles = [ ]
+  dueDate = ""
   checkList = [ ]
   priority = ""
   linkCommits = [ ]
