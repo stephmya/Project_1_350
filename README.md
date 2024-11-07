@@ -119,12 +119,12 @@ EXECUTE FUNCTION update_charity_rating_after_insert();
 ```
 
 ```bash
--- Insert a new rating for a charity
-INSERT INTO rating (charity_id, rating_source, rating_score, rating_date)
-VALUES (1, 'TestSource', 8, '2024-11-07');
+-- Reset the sequence for rating_id to the maximum current value + 1
+SELECT setval('rating_rating_id_seq', (SELECT MAX(rating_id) FROM rating));
 ```
 
 ```bash
--- Reset the sequence for rating_id to the maximum current value + 1
-SELECT setval('rating_rating_id_seq', (SELECT MAX(rating_id) FROM rating));
+-- Insert a new rating for a charity
+INSERT INTO rating (charity_id, rating_source, rating_score, rating_date)
+VALUES (1, 'TestSource', 8, '2024-11-07');
 ```
